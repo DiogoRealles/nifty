@@ -1,0 +1,24 @@
+:root {
+	/* Colors */
+	--light-100: #fff;
+	--light-200: #fafafa;
+	--light-300: #f7f7f7;
+	--text-100: #fff9;
+
+	--dark-100: #101010;
+	--dark-200: #202020;
+
+	--grey-100: #2e384d;
+
+	--bg: #04060A;
+
+	--purple-100: #9747ff;
+	--purple-200: #590fb7;
+	--red-100: #ff0076;
+	--pink-100: #ffa7ff;
+	--pink-200: #f600dd;
+	--blue-100: #34d7fe;
+
+	/* Fonts */
+	--font-body: 'Inter', sans-serif;
+}
