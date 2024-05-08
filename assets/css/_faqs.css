@@ -1,0 +1,93 @@
+.faqs {
+	position: relative;
+	margin-top: 10rem;
+}
+
+.faqs::before {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 120%;
+	background: radial-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url('../img/08_a.png');
+	position: absolute;
+	z-index: -1;
+	opacity: .1;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.faqs .container {
+	width: 100%;
+	max-width: 88rem;
+}
+
+.accordion-container {
+	margin-inline: auto;
+	border: 1px solid rgba(255, 255, 255, .1);
+	border-radius: 4px;
+}
+
+.accordion-container .accordion:first-child .title {
+	border-radius: .4rem .4rem 0 0;
+}
+
+.accordion-container .accordion:last-child .title {
+	border-radius: 0 0 .4rem .4rem;
+}
+
+.accordion .title {
+	padding: 10px 10px 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	background: rgba(255, 255, 255, .1);
+	border: 2px solid rgba(255, 255, 255, .1);
+}
+
+.accordion .title h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 135%;
+	color: var(--light-100);
+}
+
+.accordion .title .icon {
+	width: 32px;
+	height: 32px;
+	border: 2px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+}
+
+.accordion .title .icon i {
+	color: pink;
+	max-width: 14px;
+	display: block;
+	object-fit: cover;
+	transition: all .3s ease-in-out;
+}
+
+.accordion.active .title .icon i {
+	transform: rotate(180deg);
+}
+
+.accordion p {
+	display: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	color: var(--light-300);
+	padding: 15px;
+	animation: fadeIn .3s forwards;
+}
+
+.accordion.active p {
+	display: block;
+}
