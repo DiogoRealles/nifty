@@ -1,2 +1,2 @@
 # nifty
-NIFTY
+Nifty
